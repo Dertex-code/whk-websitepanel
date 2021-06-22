@@ -1,0 +1,74 @@
+<style>
+    * {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #archivos {
+        text-align: center;
+    }
+    #Soluciones {
+        text-align: right;
+    }
+    #logout-button {
+        border-radius: 30px;
+        border-style: none;
+        width: 200px;
+        height: 45px;
+        background-color: rgb(197, 194, 194);
+        align-content: center;
+        margin-top: 60px;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+    #logout-button:hover{
+        background-color: royalblue;
+        color: white;
+        transition: all 0.7s ease-in-out all;
+    }
+    #bien {
+        text-align: center;
+    }
+    #logout-buttonxd {
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+</style>
+<h1 id="bien">Bienvenido <%= name %></h1>
+<h2 id="bien">Aqui estaran las instrucciones</h2>
+<form action="/logout?_method=DELETE" method="POST">
+    <hr>
+    <h1>Links:</h1>
+  <br>
+  <h2>Admin Panel = <a href="https://www.mediafire.com/file/1mw8h6832gkn6s9/Admin.rar/file">Aqui</a></h2>
+  <h2>FrameWork 4.8 = <a href="https://go.microsoft.com/fwlink/?LinkId=2085155">Aqui</a></h2>
+  <h2>FrameWork 4.7.2 = <a href="https://go.microsoft.com/fwlink/?LinkId=863262">Aqui</a></h2>
+  <h2>WHK REG.zip = <a href="https:xnxx.com">No available yet</a></h2>
+  <hr>
+  <div id="instalar">
+  <h1>Como Instalar Manualmente por si no funciona automaticamente:</h1>  
+  <br>
+  <h2>1. Ir al admin Website</h2>
+  <h2>2. Descargar los archivos para instalacion manual</h2>
+</div>
+<hr>
+<div id="archivos">
+    <h1>Archivos: </h1>
+    <h2>Framework 4.7.2 y 4.8 = para dar soporte al panel</h2>
+    <h2>WHK Panel.zip = solo para personas q el instalador no le funciono</h2>
+</div>
+<hr>
+<div id="Soluciones">
+<h1>Soluciones a errores normales: </h1>
+<h2>Si el panel no se le abre o el instalador necesita descargar el framework</h2>
+</div>
+<hr>
+<div id="actualizar">
+    <h1>Como Actualizar: </h1>
+    <h2>Para actualizar se necesita borrar el WHK REG.exe y abrir el updater q descargara los nuevos
+        archivos, y ya puede entrar normalmente al programa. </h2>
+</div>
+<div id="logout-buttonxd">
+  <button type="submit" id="logout-button">Log Out</button>
+</div>
+</form>

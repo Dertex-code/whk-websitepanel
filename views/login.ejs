@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHK Panel Admin</title>
+    <style>
+* {
+    color: white;
+    background: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    color: white;
+}
+
+.box-login {
+    margin-top: 10%;
+    text-align: center;
+    align-content: center;
+}
+
+input {
+    outline: none;
+    box-sizing: border-box;
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 30px;
+    border-style: none;
+    text-align: center;
+    height: 30px;
+    width: 200px;
+    margin: 5px 0 10px 0;
+}
+
+.button-login {
+    font-size: 17px;
+    margin: 10px 0 0 0;
+    width: 200px;
+    height: 45px;
+    border-style: none;
+    border-radius: 30px;
+    background-color: gray;
+}
+
+.button-login:hover {
+    -webkit-transition: all 300ms ease-in-out 0s;
+    background-color: white;
+    color: gray;
+    transition: all 300ms ease-in-out 0s;
+    cursor: pointer;
+}
+
+img {
+    filter: grayscale(20%);
+    margin: 30px 0 0 200px;
+    width: 200px;
+    height: 200px;
+}
+
+#text-discord {
+    padding: 0 0 0 70px;
+    font-size: 60px;
+    color: blue;
+    text-decoration: none;
+}
+
+#regitext {
+    align-items: right;
+    text-align: right;
+    font-size: 40px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+        <form action="/login" method="POST">
+    </div>
+    <div class="box-login">
+    <h1>WHK Panel Admin</h1>
+    <input type="email" placeholder="email" id="email" name="email" required>
+    <br>
+    <input type="password" placeholder="Password" id="password" name="password" required>
+    <br>
+    <button type="submit" class="button-login">Log In</button>
+</div>
+</form>
+<a href="https://discord.gg/Qz2EDrZzD2" target="_blank"><h4 id="text-discord">Discord</h4></a>\
+<a href="/register" id="regitext">Register</a>
+</body>
+</html>

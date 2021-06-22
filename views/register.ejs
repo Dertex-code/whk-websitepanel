@@ -1,0 +1,72 @@
+<style>
+  * {
+    color: white;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #container {
+    text-align: center;
+    align-content: center;
+    margin-top: 10%;
+  }
+  .text-name {
+    color: white;
+  }
+  input {
+    text-align: center;
+    color: black;
+    outline: none;
+    background-color: white;
+    height: 30px;
+    border-radius: 30px;
+    border-style: none;
+    margin: 10px 45px 10px 0;
+  }
+  label {
+    margin: 0 4px 0 0;
+  }
+  #text-password {
+    margin-right: 30px;
+  }
+  a {
+    text-decoration: none;
+  }
+  #login-page-button {
+    cursor: pointer;
+    margin-top: 15px;
+    width: 200px;
+    height: 40px;
+    background-color: grey;
+    color: white;
+    border-style: none;
+    border-radius: 30px;
+    outline: none;
+  }
+  #login-page-button:hover {
+    background-color: white;
+    color: black;
+  }
+  #h3-for-login {
+    margin-top: 60px;
+  }
+</style>
+
+<div id="container">
+<h1>WHK Panel Register</h1>
+<form action="/register" method="POST">
+  <div id="text-name">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Name" required>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="email" required>
+  </div>
+  <div id="text-password">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="password" required>
+  </div>
+  <button type="submit" id="login-page-button">Register</button>
+</form>
+<h3 id="h3-for-login">If you already have an account, press<a href="/login"> Login</a></h3>
+</div>
